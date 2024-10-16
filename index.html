@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SLEEPY HOLLOW PD</title>
+<link rel="shortcut icon" type = "img/png" href="img/turn.png">
+<link rel = "Stylesheet" href = "styles.css">
+</head>
+<body>
+    <h2><u>CITY OF SLEEPY HOLLOW POLICE DEPARTMENT</u></h3>
+        <!-- Display the countdown timer in an element -->
+    <p style="text-align:center; font-size:250%" id="timer"></p>
+    <a href="CASTLE IN THE DISTANCE.webp"><img style="width:50%; display:block; margin-left:auto; margin-right:auto;" src="BOBBY AND GRACE.webp"></a>
+    <h3 style="text-align:left; margin-left:15%; margin-right:15%;">5 OCT 1992</h3>
+    <p style="margin-left:15%; margin-right:15%;">GRACE WALKER [FEMALE 19] AND ROBERT "BOBBY" FLYNN [MALE 20] WERE LAST SEEN AT A HALLOWEEN PARTY NEAR THE SHEFFSBURG AREA.
+
+        ​<br><br>
+        
+        GRACE WAS LAST SEEN IN A BLUE CHEERLEADER OUTFIT AND A PINK BOW. ROBERT WAS LAST SEEN WEARING A BLUE LETTERMAN JACKET, A WHITE TEE SHIRT, AND BLUE JEANS.
+        
+        <br><br>
+        
+        IF YOU HAVE ANY INFORMATION ON THEIR WHEREABOUTS, PLEASE CONTACT THE SLEEPY HOLLOW POLICE DEPARTMENT BELOW. <br><br></p>
+
+        <a href="https://smilleyhasawebsite.com/index.html"><img style="width:10%; display:block; margin-left:auto; margin-right:auto;" src="SLEEPY HOLLOW PD BADGE.webp"></a>
+        
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Oct 29, 2024 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="timer"
+              document.getElementById("timer").innerHTML = days + ":" + hours + ":"
+              + minutes + ":" + seconds;
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+
+    </body>
+
+</html>
