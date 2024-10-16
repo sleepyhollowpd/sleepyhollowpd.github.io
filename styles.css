@@ -16,3 +16,25 @@ p{
     font-family:'Times New Roman', Times, serif;
     font-size: 200%;
 }
+
+@media (max-width: 479px) {
+    h2{
+        color: red;
+        font-size: 100%;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    h3{
+        color: red;
+        font-size: 50%;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    
+    p{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 50%;
+    }
+
+}

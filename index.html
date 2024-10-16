@@ -11,8 +11,8 @@
     <h2><u>CITY OF SLEEPY HOLLOW POLICE DEPARTMENT</u></h3>
         <!-- Display the countdown timer in an element -->
     <p style="text-align:center; font-size:250%" id="timer"></p>
-    <a href="CASTLE IN THE DISTANCE.webp"><img style="width:50%; display:block; margin-left:auto; margin-right:auto;" src="BOBBY AND GRACE.webp"></a>
-    <h3 style="text-align:left; margin-left:15%; margin-right:15%;">5 OCT 1992</h3>
+    <a href="19_16_9_18_1_12.webp"><img style="width:50%; display:block; margin-left:auto; margin-right:auto;" src="BOBBY AND GRACE.webp"></a>
+    <h3 style="text-align:left; margin-left:15%; margin-right:15%;">1 NOV 1992</h3>
     <p style="margin-left:15%; margin-right:15%;">GRACE WALKER [FEMALE 19] AND ROBERT "BOBBY" FLYNN [MALE 20] WERE LAST SEEN AT A HALLOWEEN PARTY NEAR THE SHEFFSBURG AREA.
 
         ​<br><br>
@@ -23,11 +23,11 @@
         
         IF YOU HAVE ANY INFORMATION ON THEIR WHEREABOUTS, PLEASE CONTACT THE SLEEPY HOLLOW POLICE DEPARTMENT BELOW. <br><br></p>
 
-        <a href="https://smilleyhasawebsite.com/index.html"><img style="width:10%; display:block; margin-left:auto; margin-right:auto;" src="SLEEPY HOLLOW PD BADGE.webp"></a>
+        <a href="https://smilleyhasawebsite.com/index.html"><img style="width:10%; display:block; margin-left:auto; margin-right:auto;" src="BADGE.webp"></a>
         
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("Oct 29, 2024 00:00:00").getTime();
+            var countDownDate = new Date("Oct 29, 2024 01:00:00").getTime();
             
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -44,14 +44,20 @@
               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
+              function pad(num, size) {
+                num = num.toString();
+                while (num.length < size) num = "0" + num;
+                return num;
+}
+
               // Display the result in the element with id="timer"
-              document.getElementById("timer").innerHTML = days + ":" + hours + ":"
-              + minutes + ":" + seconds;
+              document.getElementById("timer").innerHTML = pad(days,2) + ":" + pad(hours,2) + ":"
+              + pad(minutes,2) + ":" + pad(seconds,2);
             
               // If the count down is finished, write some text
-              if (distance < 0) {
+              if (distance <= 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("timer").innerHTML = '[INSERT MUSIC VIDEO EMBED]';
               }
             }, 1000);
             </script>
